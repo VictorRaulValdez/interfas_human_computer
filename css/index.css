@@ -62,7 +62,7 @@ body{
     padding: 10px;
     z-index: 20;
     width: 85%;
-    height: 30vh;
+    height: 33vh;
     margin: 70px 20px 0px 20px;
     display: none;
 }
@@ -97,44 +97,14 @@ ol li:hover a{
 li a i{
     margin: 5px 10px 5px 10px;
     font-size: 20px;
+    width: 25px;
+    color:#224266;
 }
 .container{
    flex: 6;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
-}
-
-.footer{
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    height: 5px;
-    
-}
-.btn_footer{
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-.background_white{
-    background: #ddd;
-    color: #000;
-    border: none;
-    outline: none;
-    font-weight: 900;
-    border-top-left-radius:15px ;
-}
-.background_black{
-    background: #112031;
-    color: #ddd;
-    border: none;
-    outline: none;
-    font-weight: 900;
-    border-top-right-radius:15px ;
 }
 .header_content_2,.content_article_2,.content_article,.header_content,.content_article.content_footer{
     display: flex;
@@ -152,6 +122,8 @@ li a i{
 .header_content{
     margin: 1px;
     width: 90%;
+    color: #000;
+    font-weight: 700;
 
 }
 .content_article{
@@ -296,16 +268,16 @@ li a i{
     border: 1px solid #000;
 }
 .body_perfil{
-    height: 120px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
 }
 .texto_card{
 
     text-align: justify;
-    padding: 5px;;
+    padding: 10px;
     box-shadow: 2px 2px 2px 2px #00f3;;
 }
 
@@ -316,4 +288,35 @@ li a i{
 .grupo_date_time{
     
     width: 100%;
+}
+
+.contenido_texto{
+
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+}
+.img_message{
+    width: 30px;
+    height: 30px;
+    
+}
+.img_message>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.message_show{
+    padding: 10px;
+    text-align: justify;
+}
+.name_perfil{
+    display: flex;
+    justify-content: space-between;
+}
+.boton_editar{
+    width: 100px;
 }

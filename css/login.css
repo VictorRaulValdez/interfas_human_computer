@@ -68,3 +68,11 @@ form>input:hover{
 .name_perfil{
    font-size: 30px;
 }
+.modal_header{
+     background-color: orange;
+     
+}
+footer {
+   text-align: center;
+    width: 120%;
+}

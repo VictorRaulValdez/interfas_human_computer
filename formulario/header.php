@@ -1,6 +1,6 @@
 <?php
 
-include("php/connect.php");
+include("../php/connect.php");
 
 ?>
 
@@ -12,9 +12,9 @@ include("php/connect.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/62ea397d3a.js"></script>
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Document</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -39,12 +39,12 @@ include("php/connect.php");
 <body>
     <div class="container-bars">
         <ol>
-            <li><a href="usuario.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fas fa-user-alt"></i>Usuario</a></li>
-            <li><a href="menssage.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fas fa-sms"></i></i>Mensajes</a></li>
-            <li><a href="crear_cita.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fas fa-chart-line"></i>Creacion de Actividad</a></li>
-            <li><a href="actividades.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fab fa-accusoft"></i>Actividades</a></li>
+            <li><a href="../usuario.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fas fa-user-alt"></i>Usuario</a></li>
+            <li><a href="../menssage.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fas fa-sms"></i>Mensajes</a></li>
+            <li><a href="../crear_cita.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fas fa-chart-line"></i>Creacion de Actividad</a></li>
+            <li><a href="../actividades.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fab fa-accusoft"></i>Actividades</a></li>
             <li><a href="exportar.php?usuario=<?php echo $_GET["usuario"] ?>"><i class="fas fa-download"></i>Exportar</a></li>
-            <li><a href="index.php" ><i class="far fa-times-circle"></i>Salir</a></li>
+            <li><a href="../index.php"><i class="far fa-times-circle"></i>Salir</a></li>
         </ol>
     </div>
     <?php
@@ -60,7 +60,7 @@ include("php/connect.php");
     ?>
             <div class="visita_header header">
                 <div class="background">
-                    <img src=" <?php 
+                    <img src="../<?php 
                          $resul_img=mysqli_query($connect,$imagen);
                          while($rows=mysqli_fetch_assoc($resul_img)){
                               if($row['contraseña']==$rows['codigo']){

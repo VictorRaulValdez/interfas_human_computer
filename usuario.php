@@ -31,10 +31,11 @@ include("header.php");
                 ?>" class="rounded-circle" alt="">
             </div>
         </div>
+        <a href="formulario/formulario_perfil.php?usuario=<?php echo $row['id']?>" class="btn btn-primary boton_editar text-light">Editar <i class="fas fa-user-edit"></i></a>
         <div class="body_perfil">
-            <a href="formulario/formulario_perfil.php?usuario=<?php echo $row['id']?>" class="btn btn-primary">Modificar Datos</a>
-            <div class="name_perfil"><b><h2><?php echo $row['nombre'] ?></h2></b></div>
-            <div class="cargo_perfil"><b><?php echo $row['espe'] ?></b></div>
+            <div class="name_perfil"><b>Nombre:</b>    <span><?php echo $row['nombre']?></span></div>
+            <div class="name_perfil"><b>Apellidos:</b> <span><?php echo $row['apellidos']?></span></div>
+            <div class="name_perfil"><b>Cargo:</b>     <span><?php echo $row['espe']?></span></div>
         </div>
         <div class="footer_perfil">
 

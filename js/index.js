@@ -23,6 +23,15 @@
         }
         return false;
     }
+   //modal de las citas 
+    function modal_actividades(){
+        $(".add_realizar").click(function(e){
+            e.preventDefault();
+            var realizar=$(this).attr('realizada');
+            alert(realizar);
+         });
+    }
+    
     
    
  
@@ -33,6 +42,10 @@ window.onload=()=>{
         event.preventDefault();
         form_file();
      });
- 
+
+
+     if(window.history.replaceState){
+        window.history.replaceState(null,null,window.location.href);
+     }
  
 }
