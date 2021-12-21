@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/vproyec1/public_html/
-    - /bin/rsync -av ../trabajo/ $DEPLOYPATH
+    - /bin/rsync -av subir_web/ $DEPLOYPATH
